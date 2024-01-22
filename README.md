@@ -1,21 +1,46 @@
 # CS50x
 Harvard University’s Introduction to Computer Science
 
-# Harvard CS50: Introduction to Computer Science (Problem Sets)
+## Birthdays
+A web application to keep track of friends’ birthdays.
 
-This repository is dedicated to my solutions of the weekly problem sets in the course.
-- Problem Sets 1 to 5 require the **C-programming language** to be used
-- Problem Set 6 requires **Python**
-- Problem Set 7 requires **Python** and **SQL**
+## Caesar
+A program that encrypts messages using Caesar's cypher
 
-## Problem Set 1
-### Credit
-[Link to full description](https://cs50.harvard.edu/x/2020/psets/1/credit/)
-##### Context
-A credit (or debit) card, of course, is a plastic card with which you can pay for goods and services. Printed on that card is a number that’s also stored in a database somewhere, so that when your card is used to buy something, the creditor knows whom to bill. There are a lot of people with credit cards in this world, so those numbers are pretty long: American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers. And those are decimal numbers (0 through 9), not binary, which means, for instance, that American Express could print as many as 10^15 = 1,000,000,000,000,000 unique cards! (That’s, um, a quadrillion.)
+## Cash
+A program to calculate the minimum amount of coins that makes a certain number of change
 
-Actually, that’s a bit of an exaggeration, because credit card numbers actually have some structure to them. All American Express numbers start with 34 or 37; most MasterCard numbers start with 51, 52, 53, 54, or 55 (they also have some other potential starting numbers which we won’t concern ourselves with for this problem); and all Visa numbers start with 4. But credit card numbers also have a “checksum” built into them, a mathematical relationship between at least one number and others. That checksum enables computers (or humans who like math) to detect typos (e.g., transpositions), if not fraudulent numbers, without having to query a database, which can be slow. Of course, a dishonest mathematician could certainly craft a fake number that nonetheless respects the mathematical constraint, so a database lookup is still necessary for more rigorous checks.
+## Credit
+A program that finds out whether a credit card number is from VISA, AMEX or Mastercard or just invalid
 
+## DNA
+A program that identifies a person based on their DNA, per the below.
+```
+$ python dna.py databases/large.csv sequences/5.txt
+Lavender
+```
+
+## Filter
+A program that applies filters to BMPs, per the below.
+```
+$ ./filter -r image.bmp reflected.bmp
+```
+
+## Finance
+A web app via which you can manage portfolios of stocks. 
+This tool allows you to check real stocks’ prices and portfolios’ values, and also let you buy (okay, “buy”) and sell (okay, “sell”) stocks by querying IEX API for stocks’ prices sent as JSON.
+
+## Hello
+A basic program that asks the user's name and then says hello to the user
+
+## Inheritance
+A program that simulates genetic inheritance of blood type
+
+## Mario
+A program that builds a right aligned pyramid and a left aligned pyramid like in the Mario games
+
+## Plurality
+A program that runs a plurality election
 
 ### Readability
 A program that computes the approximate grade level needed to comprehend some text, per the below.
@@ -25,20 +50,21 @@ Text: Congratulations! Today is your day. You're off to Great Places! You're off
 Grade 3
 ```
 
-### Substitution
-[Link to full description](https://cs50.harvard.edu/x/2020/psets/2/substitution/)
-##### Context
-In a substitution cipher, we “encrypt” (i.e., conceal in a reversible way) a message by replacing every letter with another letter. To do so, we use a key: in this case, a mapping of each of the letters of the alphabet to the letter it should correspond to when we encrypt it. To “decrypt” the message, the receiver of the message would need to know the key, so that they can reverse the process: translating the encrypt text (generally called ciphertext) back into the original message (generally called plaintext).
+## Readability
+A program that computes the approximate grade level needed to comprehend some text, per the below.
+```
+$ python readability.py
+Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
+Grade 3
+```
 
-## Problem Set 3
-### Plurality
-[Link to full description](https://cs50.harvard.edu/x/2020/psets/3/plurality/)
-##### Context
-Elections come in all shapes and sizes. In the UK, the Prime Minister is officially appointed by the monarch, who generally chooses the leader of the political party that wins the most seats in the House of Commons. The United States uses a multi-step Electoral College process where citizens vote on how each state should allocate Electors who then elect the President.
+## Recover
+A program that recovers JPEGs from a forensic image, per the below.
+```
+$ ./recover card.raw
+```
 
-Perhaps the simplest way to hold an election, though, is via a method commonly known as the “plurality vote” (also known as “first-past-the-post” or “winner take all”). In the plurality vote, every voter gets to vote for one candidate. At the end of the election, whichever candidate has the greatest number of votes is declared the winner of the election.
-
-### Runoff
+## Runoff
 A program that runs a runoff election, per the below.
 ```
 ./runoff Alice Bob Charlie
@@ -65,6 +91,41 @@ Rank 3: Bob
 
 Alice
 ```
+
+## Scrabble
+A program that finds out which player's word is worth the most points on scrabble
+
+## Sentimental-X
+Some reruns of programs in C rewritten in python
+
+## Speller
+A program that spell-checks a file, a la the below, using a hash table.
+```
+$ ./speller texts/lalaland.txt
+MISSPELLED WORDS
+
+[...]
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHT
+[...]
+Shangri
+[...]
+fianc
+[...]
+Sebastian's
+[...]
+
+WORDS MISSPELLED:
+WORDS IN DICTIONARY:
+WORDS IN TEXT:
+TIME IN load:
+TIME IN check:
+TIME IN size:
+TIME IN unload:
+TIME IN TOTAL:
+```
+
+## Substitution
+A program that implements a substitution cipher
 
 ### Tideman
 A program that runs a Tideman election, per the below.
@@ -94,94 +155,15 @@ Rank 3: Bob
 Charlie
 ```
 
-### Filter
-A program that applies filters to BMPs, per the below.
-```
-$ ./filter -r image.bmp reflected.bmp
-```
+## Trivia
+a webpage that lets users answer trivia questions.
 
-### Recover
-A program that recovers JPEGs from a forensic image, per the below.
-```
-$ ./recover card.raw
-```
+## Volume
+A program that modifies the volume of an audio file
 
-### Speller
-A program that spell-checks a file, a la the below, using a hash table.
-```
-$ ./speller texts/lalaland.txt
-MISSPELLED WORDS
+## World-cup
+A program that simulates a sports tournament
 
-[...]
-AHHHHHHHHHHHHHHHHHHHHHHHHHHHT
-[...]
-Shangri
-[...]
-fianc
-[...]
-Sebastian's
-[...]
+## Fiftyville, Movies and Songs
+Here I practiced using SQL queries by solving various assignments
 
-WORDS MISSPELLED:
-WORDS IN DICTIONARY:
-WORDS IN TEXT:
-TIME IN load:
-TIME IN check:
-TIME IN size:
-TIME IN unload:
-TIME IN TOTAL:
-```
-
-### Credit
-A program that determines whether a provided credit card number is valid according to Luhn’s algorithm.
-```
-$ python credit.py
-Number: 378282246310005
-AMEX
-```
-
-### Readability
-A program that computes the approximate grade level needed to comprehend some text, per the below.
-```
-$ python readability.py
-Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
-Grade 3
-```
-
-### DNA
-A program that identifies a person based on their DNA, per the below.
-```
-$ python dna.py databases/large.csv sequences/5.txt
-Lavender
-```
-
-## Problem Set 7
-### Movies
-[Link to full description](https://cs50.harvard.edu/x/2020/psets/7/movies/)
-##### Context
-Write SQL queries to answer questions about a database of movies.
-
-### Houses
-[Link to full description](https://cs50.harvard.edu/x/2020/psets/7/houses/)
-##### Context
-Implement a program to import student data into a database, and then produce class rosters.
-```
-$ python import.py characters.csv
-$ python roster.py Gryffindor
-
-Lavender Brown, born 1979
-Colin Creevey, born 1981
-Seamus Finnigan, born 1979
-Hermione Jean Granger, born 1979
-Neville Longbottom, born 1980
-Parvati Patil, born 1979
-Harry James Potter, born 1980
-Dean Thomas, born 1980
-Romilda Vane, born 1981
-Ginevra Molly Weasley, born 1981
-Ronald Bilius Weasley, born 1980
-```
-
-### Finance
-This is a part of the Harvard CS50 Introduction to Computer Science - Web Track.
-We had to develop a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks’ actual prices and portfolios’ values, it will also let you buy (okay, “buy”) and sell (okay, “sell”) stocks by querying IEX API for stocks’ prices sent as JSON.
