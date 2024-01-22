@@ -42,7 +42,7 @@ A program that builds a right aligned pyramid and a left aligned pyramid like in
 ## Plurality
 A program that runs a plurality election
 
-### Readability
+## Readability
 A program that computes the approximate grade level needed to comprehend some text, per the below.
 ```
 $ ./readability
@@ -119,7 +119,7 @@ TIME IN TOTAL:
 ## Substitution
 A program that implements a substitution cipher
 
-### Tideman
+## Tideman
 A program that runs a Tideman election, per the below.
 ```
 ./tideman Alice Bob Charlie
