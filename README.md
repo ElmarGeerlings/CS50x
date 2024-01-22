@@ -1,5 +1,6 @@
 # CS50x
 Exercises that I did for CS50x: Harvard University’s Introduction to Computer Science.
+
 https://cs50.harvard.edu/x
 
 ## Birthdays
