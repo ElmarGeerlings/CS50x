@@ -50,14 +50,6 @@ Text: Congratulations! Today is your day. You're off to Great Places! You're off
 Grade 3
 ```
 
-## Readability
-A program that computes the approximate grade level needed to comprehend some text, per the below.
-```
-$ python readability.py
-Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
-Grade 3
-```
-
 ## Recover
 A program that recovers JPEGs from a forensic image, per the below.
 ```
