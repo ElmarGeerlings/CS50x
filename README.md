@@ -1,5 +1,5 @@
 # CS50x
-Harvard University’s Introduction to Computer Science
+Exercises that I did for CS50x: Harvard University’s Introduction to Computer Science.
 
 ## Birthdays
 A web application to keep track of friends’ birthdays.
