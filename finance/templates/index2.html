@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<header>
+    <div class="alert alert-primary mb-0 text-center" role="alert">
+    {{ message }}
+    </div>
+</header>
+<table class="indextable" style="width: 90%">
+    <thead>
+        <tr class="white">
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for dat in data %}
+            <tr>
+                <td>{{ dat.symbol }}</td>
+                <td>{{ dat.name }}</td>
+                <td>{{ dat.shares }}</td>
+                <td>{{ dat.price | usd }}</td>
+                <td style="width:100px">{{ dat.cash | usd }}</td>
+                <td style="width:50px">
+                    <form action="/buy" method="post">
+                    <button name="button" class="button" value="{{ dat.symbol }}">Buy</button></form>
+                </td>
+                <td style="width:50px">
+                    <form action="/sell" method="post">
+                    <button name="button" class="button" value="{{ dat.symbol }}">Sell</button></form>
+                </td>
+            </tr>
+        {% endfor %}
+        <tr class="white">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>Cash</b></td>
+            <td>{{ cash | usd }}</td>
+        </tr>
+        <tr class="white">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>Total</b></td>
+            <td>{{ total | usd }}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+{% endblock %}
